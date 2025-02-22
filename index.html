@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About HTML Form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+       input{
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-style: italic;
+       }
+       input[type=submit], input[type=reset]{
+        margin-top: 10px;
+       }
+       fieldset{
+        text-transform: capitalize;
+        font-size: 14px;
+        font-style: italic;
+        margin-bottom: 10px;
+        border-radius: 5px;
+       }
+    </style>
 </head>
 <body>
-    
+    <h2>Please fill up the form to proceed</h2>
+    <form action="">
+        <label for="name"> Your Name:
+            <input type="text" name="" id="name" placeholder="Write your name">
+        </label>
+        <label for="email">Your Email:
+            <input type="email" name="" id="email" placeholder="Write your email">
+        </label>
+        <label for="phone">Your Phone:
+            <input type="phone" name="" id="phone" placeholder="Write your phone">
+        </label>
+        <fieldset>
+            <legend>Select Base</legend>
+            <label for="tomate">
+                <input type="radio" name="pizza-base" id="tomate">Tomate
+            </label>
+            <label for="creme-frech">
+                <input type="radio" name="pizza-base" id="creme-frech">Creme-frech
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select Cheese</legend>
+            <label for="mozorella">
+                <input type="checkbox" name="cheese" id="mozorella">Mozorella
+            </label>
+            <label for="Permisano">
+                <input type="checkbox" name="cheese" id="Permisano">Permisano
+            </label>
+            <label for="Gorgonzola">
+                <input type="checkbox" name="cheese" id="Gorgonzola">Gorgonzola
+            </label>
+            <label for="chevre">
+                <input type="checkbox" name="cheese" id="chevre">Chevre
+            </label>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
